@@ -1,0 +1,16 @@
+{
+  "name": "tailwind-design-project",
+  "version": "1.0.0",
+  "description": "Web design project with Tailwind CSS - Header and Main Block",
+  "main": "index.html",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "keywords": ["tailwind", "css", "web-design"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

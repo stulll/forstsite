@@ -3,109 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Design Project</title>
+    <title>Окна Хаус - Остекленение и монтаж окон</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+        
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500"><rect fill="%23232d47" width="1200" height="500"/></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .icon-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .icon-orange {
+            color: #FF9500;
+        }
+    </style>
 </head>
 <body class="bg-white">
-    <!-- Header / Шапка -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
+    <header class="bg-white border-b border-gray-200">
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <!-- Logo -->
+            <div class="flex justify-between items-center h-20">
                 <div class="flex items-center">
-                    <a href="#" class="text-2xl font-bold text-blue-600">Logo</a>
+                    <div class="text-center">
+                        <div class="text-xs font-bold text-gray-900 tracking-wide">ОКНА</div>
+                        <div class="text-2xl font-bold text-orange-500">ХАУС</div>
+                    </div>
                 </div>
 
-                <!-- Navigation Links -->
-                <div class="hidden md:flex space-x-8">
-                    <a href="#" class="text-gray-700 hover:text-blue-600 transition">Home</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-600 transition">About</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-600 transition">Services</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#" class="text-sm text-gray-700 hover:text-orange-500 font-medium transition">Услуги</a>
+                    <a href="#" class="text-sm text-gray-700 hover:text-orange-500 font-medium transition">Продукция</a>
+                    <a href="#" class="text-sm text-gray-700 hover:text-orange-500 font-medium transition">О компании</a>
+                    <a href="#" class="text-sm text-gray-700 hover:text-orange-500 font-medium transition">Портфолио</a>
+                    <a href="#" class="text-sm text-gray-700 hover:text-orange-500 font-medium transition">Вопрос-ответ</a>
+                    <a href="#" class="text-sm text-gray-700 hover:text-orange-500 font-medium transition">Контакты</a>
                 </div>
 
-                <!-- CTA Button -->
-                <button class="hidden md:block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
-                    Get Started
-                </button>
-
-                <!-- Mobile Menu Button -->
-                <button class="md:hidden text-gray-700">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
+                <div class="flex items-center gap-3">
+                    <button class="hidden sm:block px-4 py-2 rounded font-semibold text-white bg-orange-500 hover:bg-orange-600 transition text-sm">
+                        Заявка на замер
+                    </button>
+                    <button class="hidden sm:block px-4 py-2 rounded font-semibold text-white bg-blue-900 hover:bg-blue-950 transition text-sm">
+                        Заказать расчет
+                    </button>
+                    <button class="lg:hidden p-2 text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </nav>
     </header>
 
-    <!-- Main Content Block / Основной блок -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <!-- Left Column - Text Content -->
-            <div class="space-y-6">
-                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-                    Welcome to Our Platform
-                </h1>
-                <p class="text-lg text-gray-600 leading-relaxed">
-                    Discover the power of innovative solutions designed to transform your business. 
-                    We provide cutting-edge technology and exceptional service to help you achieve your goals.
-                </p>
-                <div class="flex gap-4 pt-4">
-                    <button class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition font-semibold">
-                        Start Now
-                    </button>
-                    <button class="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-50 transition font-semibold">
-                        Learn More
-                    </button>
-                </div>
-            </div>
+    <section class="hero-section py-20 lg:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div>
+                        <div class="text-orange-500 text-4xl font-bold mb-2">Окна Хаус -</div>
+                        <h1 class="text-white text-3xl lg:text-4xl font-bold leading-tight">
+                            Профессиональный подход к остекленению
+                        </h1>
+                    </div>
 
-            <!-- Right Column - Image/Graphic -->
-            <div class="relative">
-                <div class="bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl h-96 flex items-center justify-center">
-                    <div class="text-center text-white">
-                        <svg class="w-24 h-24 mx-auto mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                        </svg>
-                        <p class="text-lg font-semibold">Your Image Here</p>
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="icon-box">
+                            <img src="/images/icons/icon-1.svg" alt="Окна и конструкции" class="w-12 h-12">
+                            <p class="text-white text-xs text-center font-medium">Современные окна и балконные конструкции по доступным ценам</p>
+                        </div>
+
+                        <div class="icon-box">
+                            <img src="/images/icons/icon-2.svg" alt="Квалифицированный подход" class="w-12 h-12">
+                            <p class="text-white text-xs text-center font-medium">Квалифицированный подход к решению задач любой сложности</p>
+                        </div>
+
+                        <div class="icon-box">
+                            <img src="/images/icons/icon-3.svg" alt="Гарантия качества" class="w-12 h-12">
+                            <p class="text-white text-xs text-center font-medium">Гарантия высочайшего качества нашей продукции</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Вызвать замерщика на дом</h2>
+
+                    <form class="space-y-4">
+                        <div>
+                            <input 
+                                type="text" 
+                                placeholder="Представьтесь, пожалуйста" 
+                                class="w-full px-4 py-3 bg-gray-100 border border-gray-200 rounded text-sm text-gray-700 placeholder-gray-600 focus:outline-none focus:border-orange-500"
+                            >
+                        </div>
+
+                        <div>
+                            <input 
+                                type="text" 
+                                placeholder="Номер телефона" 
+                                class="w-full px-4 py-3 bg-gray-100 border border-gray-200 rounded text-sm text-gray-700 placeholder-gray-600 focus:outline-none focus:border-orange-500"
+                            >
+                        </div>
+
+                        <div>
+                            <input 
+                                type="email" 
+                                placeholder="E-mail" 
+                                class="w-full px-4 py-3 bg-gray-100 border border-gray-200 rounded text-sm text-gray-700 placeholder-gray-600 focus:outline-none focus:border-orange-500"
+                            >
+                        </div>
+
+                        <div class="flex items-start gap-3 py-2">
+                            <input 
+                                type="checkbox" 
+                                id="agree" 
+                                checked
+                                class="mt-1 w-4 h-4 accent-orange-500 cursor-pointer"
+                            >
+                            <label for="agree" class="text-xs text-gray-600 leading-relaxed">
+                                Согласен с обработкой персональных данных в соответствии с <a href="#" class="text-orange-500 hover:underline">политикой конфиденциальности</a>
+                            </label>
+                        </div>
+
+                        <button 
+                            type="submit" 
+                            class="w-full px-6 py-3 rounded font-bold text-white bg-orange-500 hover:bg-orange-600 transition text-sm mt-6"
+                        >
+                            Отправить заявку
+                        </button>
+                    </form>
+
+                    <div class="mt-6 flex justify-end -mr-8">
+                        <img src="/images/hero/measurnent.jpg" alt="Ruler" class="w-64 h-auto">
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Features Section -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-24">
-            <div class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition">
-                <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-2">Fast Performance</h3>
-                <p class="text-gray-600">Lightning-fast load times and smooth user experience</p>
-            </div>
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">Наши услуги</h2>
 
-            <div class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition">
-                <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-                    </svg>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-lg transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="/images/services/service-1.jpg" alt="Установка пластиковых окон" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Установка пластиковых окон</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Установим качественные окна по доступным ценам с гарантией качества и профессиональным монтажом
+                        </p>
+                    </div>
                 </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-2">Secure & Safe</h3>
-                <p class="text-gray-600">Enterprise-grade security to protect your data</p>
-            </div>
 
-            <div class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition">
-                <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5-4a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                    </svg>
+                <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-lg transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="/images/services/service-2.jpg" alt="Остекление балконов и лоджий" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Остекление балконов и лоджий</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Закроем окончательно и отделаем балконы и лоджии. Теплые и холодные системы, быструю установку и прочее.
+                        </p>
+                    </div>
                 </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-2">Easy to Use</h3>
-                <p class="text-gray-600">Simple and intuitive interface for everyone</p>
+
+                <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-lg transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="/images/services/service-3.jpg" alt="Остекление коттеджей и дач" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Остекление коттеджей и дач</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Остекленим и отделаем под ключ от котеджей и дач пристройки, беседки, теплицы под стеклом
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-lg transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="/images/services/service-4.jpg" alt="Остекление корпоративных объектов" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Остекление корпоративных объектов</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Остекленим офисные уголки, розничные площади и торговые центры, панорамные прозрачные конструкции
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </main>
+    </section>
+
 </body>
 </html>
